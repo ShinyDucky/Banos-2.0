@@ -3,6 +3,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("banos")
+        .setDescription("cool banos stuff ig")
         .addSubcommand(info =>
             info.setName("info")
                 .setDescription("Information about the bot")
