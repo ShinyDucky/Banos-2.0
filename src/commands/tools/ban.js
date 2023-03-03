@@ -38,13 +38,13 @@ module.exports = {
         await member.send({ embeds: [dmMessage] })
 
         const response = new EmbedBuilder()
-            .setTitle(`${user} is banned`)
+            .setTitle(`${user.username} is banned`)
             .setDescription(`${user} is banned for ${reason}`)
 
         await member.ban({ reason: reason }).catch(err => {
             interaction.reply({ content: "ERROR!!! :sob:" })
         });
 
-        await interaction.reply({ embeds: response });
+        await interaction.reply({ embeds: [response] });
     }
 }
