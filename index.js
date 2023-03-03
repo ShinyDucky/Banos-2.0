@@ -13,12 +13,11 @@ for (const folder of functionFolders) {
   const functionFiles = fs
     .readdirSync(`./src/functions/${folder}`)
     .filter(file => file.endsWith('.js'));
-for (const file of functionFiles)
-  require(`./src/functions/${folder}/${file}`)(client);
+  for (const file of functionFiles)
+    require(`./src/functions/${folder}/${file}`)(client);
 }
 
 client.handleEvents();
 client.handleCommands();
 client.login(token);
 keepAlive();
-
