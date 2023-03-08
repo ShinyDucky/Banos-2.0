@@ -4,6 +4,7 @@ const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const fs = require('fs');
 const keepAlive = require(`./server`);
 
+// E
 const client = new Client({ intents: GatewayIntentBits.Guilds });
 client.commands = new Collection();
 client.commandArray = [];
@@ -21,3 +22,6 @@ client.handleEvents();
 client.handleCommands();
 client.login(token);
 keepAlive();
+
+
+

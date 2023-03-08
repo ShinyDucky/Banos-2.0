@@ -6,8 +6,6 @@ module.exports = {
         .setDescription("This is just a test command thing"),
     
     async execute(interaction) {
-        const { channel } = interaction;
-
         const embed = new EmbedBuilder()
             .setDescription("COOL");
         
