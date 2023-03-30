@@ -3,6 +3,7 @@
         "baseUrl": "./",
         "paths": {
             "@images/*": ["./images/*"],
+            "@api/*": ["./src/api/*"]
         }
     }
 }

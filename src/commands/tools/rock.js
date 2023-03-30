@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require("discord.js");
-const { rock } = require("../../../data.json")
+const { rock } = require("../../api/data.json")
 
 module.exports = {
     data: new SlashCommandBuilder()

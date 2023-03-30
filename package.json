@@ -3,8 +3,7 @@
   "version": "2.0.0",
   "main": "./index.js",
   "scripts": {
-    "test": "node .",
-    "start": "node "
+    "test": "node ."
   },
   "keywords": [],
   "author": "ShinyDuck21",
@@ -18,6 +17,7 @@
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "firebase": "^9.18.0",
     "node-fetch": "^3.2.6"
   },
   "repository": {
