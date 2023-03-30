@@ -2,4 +2,4 @@
 .env
 /.vscode
 /node_modules/*
-handleCommands.js
+src/functions/handlers/handleCommands.js
